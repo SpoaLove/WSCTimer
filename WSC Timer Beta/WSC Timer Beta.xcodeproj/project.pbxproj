@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBC353E31EA747C800AFEEFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC353E21EA747C800AFEEFF /* AppDelegate.swift */; };
+		CBC353E51EA747C800AFEEFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC353E41EA747C800AFEEFF /* ViewController.swift */; };
+		CBC353E81EA747C800AFEEFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC353E61EA747C800AFEEFF /* Main.storyboard */; };
+		CBC353EA1EA747C800AFEEFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC353E91EA747C800AFEEFF /* Assets.xcassets */; };
+		CBC353ED1EA747C800AFEEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC353EB1EA747C800AFEEFF /* LaunchScreen.storyboard */; };
+		CBC353F81EA747C800AFEEFF /* WSC_Timer_BetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC353F71EA747C800AFEEFF /* WSC_Timer_BetaTests.swift */; };
+		CBC354031EA747C800AFEEFF /* WSC_Timer_BetaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC354021EA747C800AFEEFF /* WSC_Timer_BetaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBC353F41EA747C800AFEEFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC353D71EA747C800AFEEFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC353DE1EA747C800AFEEFF;
+			remoteInfo = "WSC Timer Beta";
+		};
+		CBC353FF1EA747C800AFEEFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC353D71EA747C800AFEEFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBC353DE1EA747C800AFEEFF;
+			remoteInfo = "WSC Timer Beta";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBC353DF1EA747C800AFEEFF /* WSC Timer Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSC Timer Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC353E21EA747C800AFEEFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBC353E41EA747C800AFEEFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBC353E71EA747C800AFEEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBC353E91EA747C800AFEEFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBC353EC1EA747C800AFEEFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBC353EE1EA747C800AFEEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC353F31EA747C800AFEEFF /* WSC Timer BetaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WSC Timer BetaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC353F71EA747C800AFEEFF /* WSC_Timer_BetaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSC_Timer_BetaTests.swift; sourceTree = "<group>"; };
+		CBC353F91EA747C800AFEEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC353FE1EA747C800AFEEFF /* WSC Timer BetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WSC Timer BetaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC354021EA747C800AFEEFF /* WSC_Timer_BetaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSC_Timer_BetaUITests.swift; sourceTree = "<group>"; };
+		CBC354041EA747C800AFEEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC353DC1EA747C800AFEEFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353F01EA747C800AFEEFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353FB1EA747C800AFEEFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBC353D61EA747C800AFEEFF = {
+			isa = PBXGroup;
+			children = (
+				CBC353E11EA747C800AFEEFF /* WSC Timer Beta */,
+				CBC353F61EA747C800AFEEFF /* WSC Timer BetaTests */,
+				CBC354011EA747C800AFEEFF /* WSC Timer BetaUITests */,
+				CBC353E01EA747C800AFEEFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC353E01EA747C800AFEEFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC353DF1EA747C800AFEEFF /* WSC Timer Beta.app */,
+				CBC353F31EA747C800AFEEFF /* WSC Timer BetaTests.xctest */,
+				CBC353FE1EA747C800AFEEFF /* WSC Timer BetaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC353E11EA747C800AFEEFF /* WSC Timer Beta */ = {
+			isa = PBXGroup;
+			children = (
+				CBC353E21EA747C800AFEEFF /* AppDelegate.swift */,
+				CBC353E41EA747C800AFEEFF /* ViewController.swift */,
+				CBC353E61EA747C800AFEEFF /* Main.storyboard */,
+				CBC353E91EA747C800AFEEFF /* Assets.xcassets */,
+				CBC353EB1EA747C800AFEEFF /* LaunchScreen.storyboard */,
+				CBC353EE1EA747C800AFEEFF /* Info.plist */,
+			);
+			path = "WSC Timer Beta";
+			sourceTree = "<group>";
+		};
+		CBC353F61EA747C800AFEEFF /* WSC Timer BetaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC353F71EA747C800AFEEFF /* WSC_Timer_BetaTests.swift */,
+				CBC353F91EA747C800AFEEFF /* Info.plist */,
+			);
+			path = "WSC Timer BetaTests";
+			sourceTree = "<group>";
+		};
+		CBC354011EA747C800AFEEFF /* WSC Timer BetaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBC354021EA747C800AFEEFF /* WSC_Timer_BetaUITests.swift */,
+				CBC354041EA747C800AFEEFF /* Info.plist */,
+			);
+			path = "WSC Timer BetaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC353DE1EA747C800AFEEFF /* WSC Timer Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC354071EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer Beta" */;
+			buildPhases = (
+				CBC353DB1EA747C800AFEEFF /* Sources */,
+				CBC353DC1EA747C800AFEEFF /* Frameworks */,
+				CBC353DD1EA747C800AFEEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WSC Timer Beta";
+			productName = "WSC Timer Beta";
+			productReference = CBC353DF1EA747C800AFEEFF /* WSC Timer Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBC353F21EA747C800AFEEFF /* WSC Timer BetaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC3540A1EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer BetaTests" */;
+			buildPhases = (
+				CBC353EF1EA747C800AFEEFF /* Sources */,
+				CBC353F01EA747C800AFEEFF /* Frameworks */,
+				CBC353F11EA747C800AFEEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC353F51EA747C800AFEEFF /* PBXTargetDependency */,
+			);
+			name = "WSC Timer BetaTests";
+			productName = "WSC Timer BetaTests";
+			productReference = CBC353F31EA747C800AFEEFF /* WSC Timer BetaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBC353FD1EA747C800AFEEFF /* WSC Timer BetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC3540D1EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer BetaUITests" */;
+			buildPhases = (
+				CBC353FA1EA747C800AFEEFF /* Sources */,
+				CBC353FB1EA747C800AFEEFF /* Frameworks */,
+				CBC353FC1EA747C800AFEEFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBC354001EA747C800AFEEFF /* PBXTargetDependency */,
+			);
+			name = "WSC Timer BetaUITests";
+			productName = "WSC Timer BetaUITests";
+			productReference = CBC353FE1EA747C800AFEEFF /* WSC Timer BetaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC353D71EA747C800AFEEFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tengoku no Spoa";
+				TargetAttributes = {
+					CBC353DE1EA747C800AFEEFF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DLW9CMP935;
+						ProvisioningStyle = Automatic;
+					};
+					CBC353F21EA747C800AFEEFF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DLW9CMP935;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBC353DE1EA747C800AFEEFF;
+					};
+					CBC353FD1EA747C800AFEEFF = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DLW9CMP935;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CBC353DE1EA747C800AFEEFF;
+					};
+				};
+			};
+			buildConfigurationList = CBC353DA1EA747C800AFEEFF /* Build configuration list for PBXProject "WSC Timer Beta" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBC353D61EA747C800AFEEFF;
+			productRefGroup = CBC353E01EA747C800AFEEFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC353DE1EA747C800AFEEFF /* WSC Timer Beta */,
+				CBC353F21EA747C800AFEEFF /* WSC Timer BetaTests */,
+				CBC353FD1EA747C800AFEEFF /* WSC Timer BetaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC353DD1EA747C800AFEEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC353ED1EA747C800AFEEFF /* LaunchScreen.storyboard in Resources */,
+				CBC353EA1EA747C800AFEEFF /* Assets.xcassets in Resources */,
+				CBC353E81EA747C800AFEEFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353F11EA747C800AFEEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353FC1EA747C800AFEEFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC353DB1EA747C800AFEEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC353E51EA747C800AFEEFF /* ViewController.swift in Sources */,
+				CBC353E31EA747C800AFEEFF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353EF1EA747C800AFEEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC353F81EA747C800AFEEFF /* WSC_Timer_BetaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBC353FA1EA747C800AFEEFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC354031EA747C800AFEEFF /* WSC_Timer_BetaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBC353F51EA747C800AFEEFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC353DE1EA747C800AFEEFF /* WSC Timer Beta */;
+			targetProxy = CBC353F41EA747C800AFEEFF /* PBXContainerItemProxy */;
+		};
+		CBC354001EA747C800AFEEFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBC353DE1EA747C800AFEEFF /* WSC Timer Beta */;
+			targetProxy = CBC353FF1EA747C800AFEEFF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBC353E61EA747C800AFEEFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC353E71EA747C800AFEEFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBC353EB1EA747C800AFEEFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC353EC1EA747C800AFEEFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBC354051EA747C800AFEEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBC354061EA747C800AFEEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBC354081EA747C800AFEEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				"DEVELOPMENT_TEAM[sdk=*]" = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer Beta/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-Beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CBC354091EA747C800AFEEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_USE_OPTIMIZATION_PROFILE = YES;
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer Beta/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-Beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CBC3540B1EA747C800AFEEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer BetaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-BetaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSC Timer Beta.app/WSC Timer Beta";
+			};
+			name = Debug;
+		};
+		CBC3540C1EA747C800AFEEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer BetaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-BetaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WSC Timer Beta.app/WSC Timer Beta";
+			};
+			name = Release;
+		};
+		CBC3540E1EA747C800AFEEFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer BetaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-BetaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "WSC Timer Beta";
+			};
+			name = Debug;
+		};
+		CBC3540F1EA747C800AFEEFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DLW9CMP935;
+				INFOPLIST_FILE = "WSC Timer BetaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JCIDITD.WSC-Timer-BetaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "WSC Timer Beta";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC353DA1EA747C800AFEEFF /* Build configuration list for PBXProject "WSC Timer Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC354051EA747C800AFEEFF /* Debug */,
+				CBC354061EA747C800AFEEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC354071EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC354081EA747C800AFEEFF /* Debug */,
+				CBC354091EA747C800AFEEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC3540A1EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer BetaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC3540B1EA747C800AFEEFF /* Debug */,
+				CBC3540C1EA747C800AFEEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC3540D1EA747C800AFEEFF /* Build configuration list for PBXNativeTarget "WSC Timer BetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC3540E1EA747C800AFEEFF /* Debug */,
+				CBC3540F1EA747C800AFEEFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC353D71EA747C800AFEEFF /* Project object */;
+}
