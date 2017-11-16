@@ -64,13 +64,6 @@ class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        //
-        func loadSave(){
-            if userSaved {
-                phaseCount = UserDefaults.value(forKey: "savedPhase") as! Int
-                startTime = UserDefaults.value(forKey: "savedStartTime") as! TimeInterval
-            }
-        }loadSave()
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
