@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB31DDE31FB50D6F0065468F /* YALE.png in Resources */ = {isa = PBXBuildFile; fileRef = CB31DDE21FB50D6F0065468F /* YALE.png */; };
+		CB79A0291FBCF82C00970A86 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = CB79A0281FBCF82B00970A86 /* white.png */; };
+		CB79A02B1FBCFBC800970A86 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79A02A1FBCFBC800970A86 /* PreferencesViewController.swift */; };
 		CBC353E31EA747C800AFEEFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC353E21EA747C800AFEEFF /* AppDelegate.swift */; };
 		CBC353E51EA747C800AFEEFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC353E41EA747C800AFEEFF /* ViewController.swift */; };
 		CBC353E81EA747C800AFEEFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC353E61EA747C800AFEEFF /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB31DDE21FB50D6F0065468F /* YALE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YALE.png; sourceTree = "<group>"; };
+		CB79A0281FBCF82B00970A86 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		CB79A02A1FBCFBC800970A86 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		CBC353DF1EA747C800AFEEFF /* WSC Timer Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WSC Timer Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC353E21EA747C800AFEEFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC353E41EA747C800AFEEFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,8 +105,11 @@
 			children = (
 				CBC353E21EA747C800AFEEFF /* AppDelegate.swift */,
 				CBC353E41EA747C800AFEEFF /* ViewController.swift */,
+				CB79A02A1FBCFBC800970A86 /* PreferencesViewController.swift */,
 				CBC353E61EA747C800AFEEFF /* Main.storyboard */,
 				CBC353E91EA747C800AFEEFF /* Assets.xcassets */,
+				CB31DDE21FB50D6F0065468F /* YALE.png */,
+				CB79A0281FBCF82B00970A86 /* white.png */,
 				CBC353EB1EA747C800AFEEFF /* LaunchScreen.storyboard */,
 				CBC353EE1EA747C800AFEEFF /* Info.plist */,
 			);
@@ -235,8 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB79A0291FBCF82C00970A86 /* white.png in Resources */,
 				CBC353ED1EA747C800AFEEFF /* LaunchScreen.storyboard in Resources */,
 				CBC353EA1EA747C800AFEEFF /* Assets.xcassets in Resources */,
+				CB31DDE31FB50D6F0065468F /* YALE.png in Resources */,
 				CBC353E81EA747C800AFEEFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +275,7 @@
 			files = (
 				CBC353E51EA747C800AFEEFF /* ViewController.swift in Sources */,
 				CBC353E31EA747C800AFEEFF /* AppDelegate.swift in Sources */,
+				CB79A02B1FBCFBC800970A86 /* PreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
