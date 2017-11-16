@@ -11,24 +11,32 @@ import AudioToolbox
 
 
 class ViewController: UIViewController {
+    
    //Initialize time Variables
     var minutes: UInt8 = 0
     var seconds: UInt8 = 0
     var fraction: UInt8 = 0
-
 
     
 //Connects Status Text Field to View Controller
     @IBOutlet weak var CurrentStatusTextField: UILabel!
     //Initialize Phase Counter
     var phaseCount: Int = 0
-
+    
+    func loadSave(){
+//        if userSaved {
+//            phaseCount = UserDefaults.value(forKey: "savedPhase") as! Int
+//            startTime = UserDefaults.value(forKey: "savedStartTime") as! TimeInterval
+//        }
+    }
     //Determine Phase Status
     func setCurrentStatus( PhaseCount: Int) -> String {
         let PhaseCount = PhaseCount
         switch PhaseCount {
+        case 0:
+            return "WSC Timer Pwapp"
         case 1:
-            return "Preperation"
+            return "Preparation"
         case 2:
             return "Affrimative Speaker 1"
         case 6:
@@ -44,13 +52,13 @@ class ViewController: UIViewController {
         case 3,5,7,9,11:
             return "Discussion"
         case 13:
-            return "Feedback Preperation"
+            return "Feedback Preparation"
         case 14:
             return "Feedback Negative"
         case 15:
             return "Feedback Affrimative"
         default:
-            return "WSC Timer App"
+            return "End!"
         }
     }
     
@@ -60,6 +68,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,25 +78,39 @@ class ViewController: UIViewController {
         timer.invalidate()
     }
     
-    //reset button fuction
-    @IBAction func resetButton(_ sender: UIButton) {
-        timer.invalidate()
+    // resetTimer
+    fileprivate func resetTimer() {
         phaseCount = 0
+        timer.invalidate()
         displayTimeField.text = "00:00:00"
         CurrentStatusTextField.text = setCurrentStatus(PhaseCount: phaseCount)
+    }
+    
+    //reset button fuction
+
+    @IBAction func resetButton(_ sender: UIButton) {
+        resetTimer()
     }
     
     
     //Start Button Function
     @IBAction func startButton(_ sender: Any) {
         if (!timer.isValid) {
+            
             //run update Time repeativelly
             let aSelector : Selector = #selector(ViewController.updateTime)
             timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+            
             //run Time Alert check repeativelly
             let bSelector: Selector = #selector(ViewController.timeAlert)
             timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: bSelector, userInfo: nil, repeats: true)
+            
+            //run End phase check  repeativelly
+            let cSelector : Selector = #selector(ViewController.checkIfEndOfPhase)
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: cSelector, userInfo: nil, repeats: true)
+            // define start time
             startTime = NSDate.timeIntervalSinceReferenceDate
+
         }
         
         //continue to next phase
@@ -102,6 +125,7 @@ class ViewController: UIViewController {
     //initializing timer & timer variables
     var startTime = TimeInterval()
     var timer:Timer = Timer()
+
     
     //update function
     func updateTime() {
@@ -121,7 +145,6 @@ class ViewController: UIViewController {
         fraction = UInt8(elapsedTime * 100)
         
         //add the leading zero for minutes, seconds and millseconds and store them as string constants
-        
         let strMinutes = String(format: "%02d", minutes)
         let strSeconds = String(format: "%02d", seconds)
         let strFraction = String(format: "%02d", fraction)
@@ -135,7 +158,7 @@ class ViewController: UIViewController {
         //determine phase type
         switch phaseCount {
             
-        case 1://Type 1-Preperation stage, 15min
+        case 1://Type 1-Preparation stage, 15min
             if minutes==15 && seconds==0 {
                 let alertController = UIAlertController(title: "Times Up!", message:
                     "End of Discussion", preferredStyle: UIAlertControllerStyle.alert)
@@ -190,11 +213,10 @@ class ViewController: UIViewController {
     
     //progress bar initialization
     @IBOutlet weak var ProgressView: UIProgressView!
-    var ProgressbarLoad: Double = progressBaContorler()
     func progressBaContorler() -> Double {
         switch phaseCount {
         case 1:
-            return (15/Double(15-Double(Minutes)))*100
+            return (15/Double(15-Double(minutes)))*100
         case 2,6,10,4,8,12: return (4/Double(4-Double(minutes)))*100
         case 3,5,7,9,11: return (1/Double(1-Double(minutes)))*100
         case 13...15: return (1.5/(1.5-Double(minutes)))*100
@@ -203,8 +225,70 @@ class ViewController: UIViewController {
         }
     }
     
-    //Progress bar Set Progress
-    func set Progress bar(parameters) -> <#return type#> {
-        <#function body#>
+    // recap function
+    @IBAction func recapButtonDidPressed(_ sender: UIButton) {
+        
+        // Return error if timer is not started
+        if CurrentStatusTextField.text == "WSC Timer Pwapp" {
+            let alert = UIAlertController(title: "Error", message: "You must start the timer to recap!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Dissmiss", style: UIAlertActionStyle.default, handler: nil
+            ))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        // Generate formated output
+        let formatedText = "\(CurrentStatusTextField.text ?? "Nil Status") : \(displayTimeField.text ?? "Nil Time") \n"
+        print(formatedText)
+        
+        // save Recaps into userDefaults
+        if let recaps = UserDefaults.standard.object(forKey: "Recaps"){
+            let recapsString = recaps as! String
+            UserDefaults.standard.set(recapsString+formatedText, forKey: "Recaps")
+        }else{
+            UserDefaults.standard.set(formatedText, forKey: "Recaps")
+
+        }
     }
+    
+    // Check if the phase reach end
+    func checkIfEndOfPhase(){
+        if CurrentStatusTextField.text == "End!"{
+            phaseCount = 0
+            let alert = UIAlertController(title: "Reset?", message: "Do you want to reset?", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { [weak alert] (_) in
+                self.resetTimer()
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    // Option Button
+    @IBAction func optionButtonDidPressed(_ sender: UIButton) {
+        
+        // if during timing show alert
+        guard CurrentStatusTextField.text == "WSC Timer Pwapp" else {
+            let alert = UIAlertController(title: "Warning!", message: "Leaving this page will stop the timer, do you wish to leave?", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: { [weak alert] (_) in
+                
+                // save current status
+                UserDefaults.standard.set(self.startTime, forKey: "savedStartTime")
+                UserDefaults.standard.set(self.phaseCount,forKey: "savedPhase")
+                UserDefaults.standard.set(true, forKey: "saved")
+                
+                self.performSegue(withIdentifier: "segueToPreferences", sender: self)
+            }))
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        // preform segue
+        self.performSegue(withIdentifier: "segueToPreferences", sender: self)
+    }
+
+    
 }
+
