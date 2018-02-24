@@ -289,6 +289,13 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "segueToPreferences", sender: self)
     }
 
+    // return the timer phase by 1
+    @IBAction func backButton(_ sender: UIButton) {
+        phaseCount -= 1
+        timer.invalidate()
+        displayTimeField.text = "00:00:00"
+        CurrentStatusTextField.text = setCurrentStatus(PhaseCount: phaseCount)
+    }
     
 }
 
